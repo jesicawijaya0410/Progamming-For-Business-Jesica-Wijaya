@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <div class="header">
+            <h1>Registration Form</h1>
+            <p>Please fill in all required information</p>
+        </div>
+
+        <div class="success-message" id="successMessage">
+            Registration completed successfully! Thank you for registering.
+        </div>
+
+        <!-- Custom Success Modal -->
+        <div class="modal-overlay" id="successModal">
+            <div class="modal">
+                <div class="modal-header">
+                    <div class="success-icon">✓</div>
+                    <h2>Registration Successful!</h2>
+                </div>
+                <div class="modal-body">
+                    <p>Thank you for registering! Your information has been submitted successfully.</p>
+                    <div class="registration-details" id="registrationDetails"></div>
+                </div>
+                <div class="modal-footer">
+                    <button class="modal-btn primary" id="viewDetailsBtn">View Details</button>
+                    <button class="modal-btn secondary" id="closeModalBtn">Close</button>
+                </div>
+            </div>
+        </div>
+
+        <form id="registrationForm">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="fullName">Full Name *</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                    <div class="error">Please enter your full name</div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required>
+                    <div class="error">Please enter a valid email address</div>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="phone">Phone Number *</label>
+                    <input type="tel" id="phone" name="phone" required>
+                    <div class="error">Please enter your phone number</div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="dateOfBirth">Date of Birth *</label>
+                    <input type="date" id="dateOfBirth" name="dateOfBirth" required>
+                    <div class="error">Please select your date of birth</div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Gender *</label>
+                <div class="radio-group">
+                    <div class="radio-item">
+                        <input type="radio" id="male" name="gender" value="male" required>
+                        <label for="male">Male</label>
+                    </div>
+                    <div class="radio-item">
+                        <input type="radio" id="female" name="gender" value="female" required>
+                        <label for="female">Female</label>
+                    </div>
+                </div>
+                <div class="error">Please select your gender</div>
+            </div>
+
+            <div class="form-group">
+                <label for="program">Program of Study *</label>
+                <select id="program" name="program" required>
+                    <option value="">Select your program</option>
+                    <option value="computer-science">Computer Science</option>
+                    <option value="information-systems">Information Systems</option>
+                    <option value="business-administration">Business Administration</option>
+                    <option value="accounting">Accounting</option>
+                    <option value="marketing">Marketing</option>
+                    <option value="psychology">Psychology</option>
+                    <option value="international-relations">International Relations</option>
+                    <option value="architecture">Architecture</option>
+                    <option value="civil-engineering">Civil Engineering</option>
+                    <option value="electrical-engineering">Electrical Engineering</option>
+                </select>
+                <div class="error">Please select your program of study</div>
+            </div>
+
+            <div class="form-group">
+                <label>Hobbies (Select all that apply)</label>
+                <div class="checkbox-group">
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="reading" name="hobbies" value="reading">
+                        <label for="reading">Reading</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="sports" name="hobbies" value="sports">
+                        <label for="sports">Sports</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="music" name="hobbies" value="music">
+                        <label for="music">Music</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="gaming" name="hobbies" value="gaming">
+                        <label for="gaming">Gaming</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="cooking" name="hobbies" value="cooking">
+                        <label for="cooking">Cooking</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="traveling" name="hobbies" value="traveling">
+                        <label for="traveling">Traveling</label>
+                    </div>
+                    <div class="checkbox-item other-hobby">
+                        <input type="checkbox" id="other-hobby" name="hobbies" value="other">
+                        <label for="other-hobby">Other:</label>
+                        <input type="text" id="other-hobby-text" name="other-hobby-text" placeholder="Please specify..." disabled>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="address">Full Address *</label>
+                <textarea id="address" name="address" placeholder="Enter your complete address here..." required></textarea>
+                <div class="error">Please enter your full address</div>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit Registration</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
