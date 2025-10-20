@@ -1,0 +1,167 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: aliceblue;
+}
+
+#header-section{
+    color: aliceblue;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    padding: 10px;
+    border-bottom: 1px solid white;
+}
+
+.menu-text{
+    color: aliceblue;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.menu-text:hover{
+    color: yellow;
+}
+
+#regist{
+    text-align: center;
+}
+
+/* form */
+
+#main-form{
+    height: 800px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+#main-form h2{
+    text-align: center;
+}
+
+#form-contain{
+    height: 600px;
+    width: 400px;
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.input-contain{
+    flex-direction: column;
+    display: flex;
+    margin: 10px;
+}
+
+.input-contain input{
+    background-color: grey;
+    color: black;
+}
+
+.input-contain input::placeholder{
+    color: black
+}
+
+.check-contain{
+    margin: 5px;
+}
+
+button{
+    background-color: yellow;
+    cursor: pointer;
+}
+.span{
+    color: red;
+}
+
+/* home */
+
+#bg-section{
+    height: 400px;
+    background-image: url(background3.jpg);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+#kotak-section{
+    height: 250px;
+    width: 900px;
+    background-color: black;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+#kotak-section a{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-weight: bold;
+    text-decoration: none;
+    height: 40px;
+    width: 90px;
+    background-color: yellow;
+    border-radius: 10%;
+    border: 1px solid white;
+}
+
+#kotak-section a:hover{
+    box-shadow: 0 4px 20px 0 cyan;
+}
+
+
+#card-section{
+    text-align: center;
+}
+
+#card-contain{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.card{
+    height: 360px;
+    width: 300px;
+    background-color: grey;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 5%;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.card:hover{
+    box-shadow: 0 4px 20px 0 blue;
+}
+
+.card img{
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+}
+
+#paragraph{
+    margin-top: 10px;
+    height: 100px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+}
+
+footer{
+    padding: 20px;
+}
